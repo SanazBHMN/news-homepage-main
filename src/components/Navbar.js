@@ -1,21 +1,41 @@
 import logo from "../assets/images/logo.svg";
 import menu from "../assets/images/icon-menu.svg";
+import links from "../utils/links";
+import Drawer from "./Drawer";
 
-function Navbar() {
+function Navbar({ isOpen, setIsOpen }) {
   return (
-    <nav className="relative w-full flex items-center justify-between py-4">
-      <div className="container-fluid w-full flex flex-wrap items-center justify-between px-6">
-        <div className="container-fluid w-full flex justify-between items-center">
-          <a
-            className="flex items-center text-gray-900 hover:text-gray-900 focus:text-gray-900 mt-2 lg:mt-0 mr-1"
-            href="#"
-          >
-            <img src={logo} alt="logo" loading="lazy" />
-          </a>
-          <img src={menu} />
+    <>
+      <header className="flex justify-between items-center">
+        <div className="w-full flex justify-between items-center px-4 py-3">
+          <div>
+            <img className="h-8" src={logo} alt="W." />
+          </div>
+          <div className="sm:hidden">
+            <button
+              className="focus:outline-none"
+              onClick={() => {
+                setIsOpen(true);
+              }}
+            >
+              <img src={menu} />
+            </button>
+          </div>
         </div>
-      </div>
-    </nav>
+
+        <Drawer isOpen={isOpen} setIsOpen={setIsOpen} />
+
+        <div className="hidden sm:block">
+          <ul className="flex justify-center">
+            {links.map((link) => (
+              <a key={link.id} href={link.href} className="mx-3">
+                <li>{link.title}</li>
+              </a>
+            ))}
+          </ul>
+        </div>
+      </header>
+    </>
   );
 }
 
