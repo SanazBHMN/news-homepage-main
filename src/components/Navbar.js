@@ -7,7 +7,7 @@ function Navbar({ isOpen, setIsOpen }) {
   return (
     <>
       <header className="flex justify-between items-center">
-        <div className="w-full flex justify-between items-center px-4 py-3">
+        <div className="w-full flex justify-between items-center pb-3">
           <div>
             <img className="h-8" src={logo} alt="W." />
           </div>
