@@ -23,7 +23,11 @@ function Drawer({ isOpen, setIsOpen }) {
         </button>
         <ul className="pt-28">
           {links.map((link) => (
-            <a className="block mt-6" key={link.id} href={link.href}>
+            <a
+              className="block mt-6 hover:text-red-soft"
+              key={link.id}
+              href={link.href}
+            >
               <li>{link.title}</li>
             </a>
           ))}
