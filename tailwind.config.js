@@ -18,6 +18,10 @@ module.exports = {
         "blue-dark": "hsl(240, 100%, 5%)",
       },
     },
+    gridTemplateColumns: {
+      2: "1fr 1fr",
+      70: "70% 1fr",
+    },
   },
   plugins: [],
 };

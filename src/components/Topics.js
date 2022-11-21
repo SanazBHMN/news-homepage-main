@@ -28,7 +28,7 @@ function Topics() {
   ];
 
   return (
-    <div>
+    <div className="xl:flex justify-between align-center">
       {topics.map((topic) => (
         <div key={topic.id} className="flex align-center my-8">
           <div className="mr-6 w-[250px]">

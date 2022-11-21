@@ -18,11 +18,11 @@ function News() {
   ];
 
   return (
-    <div className="bg-blue-dark text-white-off p-5 my-14">
-      <h1 className="text-orange-soft font-bold">New</h1>
+    <div className="bg-blue-dark text-white-off p-5 my-14 lg:my-0">
+      <h1 className="text-orange-soft text-3xl font-bold">New</h1>
       <div className="divide-y divide-blue-dark-grayish ">
         {news.map((newsItem) => (
-          <div key={newsItem.id} className="py-8 leading-8">
+          <div key={newsItem.id} className="py-5 leading-8">
             <h3 className="font-bold">{newsItem.title}</h3>
             <p className="text-blue-grayish">{newsItem.text}</p>
           </div>
