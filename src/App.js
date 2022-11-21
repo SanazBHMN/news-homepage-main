@@ -15,6 +15,24 @@ function App() {
         <News />
       </div>
       <Topics />
+      <div className="attribution text-center">
+        Challenge by{" "}
+        <a
+          href="https://www.frontendmentor.io?ref=challenge"
+          target="_blank"
+          className="underline"
+        >
+          Frontend Mentor
+        </a>
+        . Coded by{" "}
+        <a
+          href="https://www.frontendmentor.io/profile/SanazBHMN"
+          className="underline"
+        >
+          Sanaz Bahmani
+        </a>
+        .
+      </div>
     </div>
   );
 }
