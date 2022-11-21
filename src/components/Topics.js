@@ -31,11 +31,11 @@ function Topics() {
     <div className="xl:flex justify-between align-center">
       {topics.map((topic) => (
         <div key={topic.id} className="flex align-center my-8">
-          <div className="mr-6 w-[250px]">
-            <img src={topic.img} className="w-full" />
-          </div>
-          <div>
-            <span className="text-blue-grayish font-bold">{topic.order}</span>
+          <img src={topic.img} className="object-cover w-32 h-32 mr-6" />
+          <div className="leading-7">
+            <span className="text-blue-grayish text-3xl font-bold">
+              {topic.order}
+            </span>
             <h3 className="text-blue-dark font-bold">{topic.title}</h3>
             <p className="text-blue-dark-grayish">{topic.text}</p>
           </div>
