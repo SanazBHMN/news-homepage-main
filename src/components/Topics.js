@@ -28,10 +28,10 @@ function Topics() {
   ];
 
   return (
-    <div className="xl:flex justify-between align-center">
+    <div className="grid grid-cols-1 gap-10 my-16 xl:grid-cols-3">
       {topics.map((topic) => (
-        <div key={topic.id} className="flex align-center my-8">
-          <img src={topic.img} className="object-cover w-32 h-32 mr-6" />
+        <div key={topic.id} className="grid grid-cols-1.3 gap-6">
+          <img src={topic.img} className="object-cover w-32 h-full" />
           <div className="leading-7">
             <span className="text-blue-grayish text-3xl font-bold">
               {topic.order}

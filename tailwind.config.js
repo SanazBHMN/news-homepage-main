@@ -20,6 +20,8 @@ module.exports = {
     },
     gridTemplateColumns: {
       2: "1fr 1fr",
+      3: "1fr 1fr 1fr",
+      1.3: "100px 1fr",
       70: "70% 1fr",
     },
   },
