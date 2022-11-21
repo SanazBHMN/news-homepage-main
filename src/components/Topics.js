@@ -30,7 +30,7 @@ function Topics() {
   return (
     <div>
       {topics.map((topic) => (
-        <div className="flex align-center my-8">
+        <div key={topic.id} className="flex align-center my-8">
           <div className="mr-6 w-[250px]">
             <img src={topic.img} className="w-full" />
           </div>

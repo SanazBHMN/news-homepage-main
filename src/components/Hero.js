@@ -1,10 +1,12 @@
 import heroMobile from "../assets/images/image-web-3-mobile.jpg";
+import heroDesktop from "../assets/images/image-web-3-desktop.jpg";
 
 function Hero() {
   return (
     <div className="mt-4">
       <div className="flex justify-center">
-        <img src={heroMobile} />
+        <img src={heroMobile} className="sm:hidden block" />
+        <img src={heroDesktop} className="sm:block hidden" />
       </div>
       <div className="my-6">
         <h1 className="text-4xl font-bold">
