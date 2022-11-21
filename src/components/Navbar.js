@@ -28,7 +28,11 @@ function Navbar({ isOpen, setIsOpen }) {
         <div className="hidden sm:block">
           <ul className="flex justify-center">
             {links.map((link) => (
-              <a key={link.id} href={link.href} className="mx-3">
+              <a
+                key={link.id}
+                href={link.href}
+                className="mx-3 hover:text-red-soft"
+              >
                 <li>{link.title}</li>
               </a>
             ))}

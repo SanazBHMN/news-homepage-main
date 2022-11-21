@@ -23,7 +23,9 @@ function News() {
       <div className="divide-y divide-blue-dark-grayish ">
         {news.map((newsItem) => (
           <div key={newsItem.id} className="py-5 leading-8">
-            <h3 className="font-bold">{newsItem.title}</h3>
+            <h3 className="font-bold cursor-pointer hover:text-orange-soft">
+              {newsItem.title}
+            </h3>
             <p className="text-blue-grayish">{newsItem.text}</p>
           </div>
         ))}

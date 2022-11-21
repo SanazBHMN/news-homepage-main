@@ -36,7 +36,9 @@ function Topics() {
             <span className="text-blue-grayish text-3xl font-bold">
               {topic.order}
             </span>
-            <h3 className="text-blue-dark font-bold">{topic.title}</h3>
+            <h3 className="text-blue-dark font-bold cursor-pointer hover:text-red-soft">
+              {topic.title}
+            </h3>
             <p className="text-blue-dark-grayish">{topic.text}</p>
           </div>
         </div>

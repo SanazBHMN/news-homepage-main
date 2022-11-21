@@ -20,8 +20,11 @@ function Hero() {
             power of the platforms back into the hands of the people. But is it
             really fulfilling its promise?
           </p>
-          <button className="bg-red-soft text-white-off tracking-widest px-8 py-3 mt-3">
-            READ MORE
+          <button
+            type="button"
+            className="bg-red-soft text-white-off uppercase tracking-widest px-8 py-3 mt-3 hover:bg-blue-dark"
+          >
+            read more
           </button>
         </main>
       </div>
